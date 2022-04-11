@@ -7,8 +7,8 @@ export class SpeechRecognitionWeb extends WebPlugin
     throw this.unimplemented("Method not implemented on web.");
   }
   start(_options?: UtteranceOptions): Promise<{ matches: string[] }> {
-    return new Promise((resolve, reject) => {
-      return resolve({matches: ['I bet you would like that funcion?']});
+    return new Promise((resolve) => {
+      return resolve({ matches: ["I bet you would like that funcion?"] });
     });
   }
   stop(): Promise<void> {
